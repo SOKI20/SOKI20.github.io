@@ -129,20 +129,35 @@
       <div class="post-content-main animate__animated  animate__fadeInUp">
         <!-- 目录 -->
         
-          <ol class="toc-top"><li class="toc-top-item toc-top-level-2"><a class="toc-top-link" href="#0-前言"><span class="toc-top-text">0 前言</span></a></li></ol>
+          <ol class="toc-top"><li class="toc-top-item toc-top-level-2"><a class="toc-top-link" href="#0-前言"><span class="toc-top-text">0 前言</span></a></li><li class="toc-top-item toc-top-level-2"><a class="toc-top-link" href="#1-复数的运算"><span class="toc-top-text">1 复数的运算</span></a></li></ol>
         
         <h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0 前言"></a>0 前言</h2><p>回顾高中所学的复数运算，我们有：</p>
 <p>$ 复数的加法：  (a+bi)+(c+di) = (a+c) + (b+d)i $</p>
 <p>$ 复数的乘法：  (a+bi)(c+di) = (ac-bd) + (ad+bc)i $</p>
 <p>你可能会问：这和线性代数有什么关系？</p>
 <p><br/></p>
-<p>我们其实可以把每一个复数视为$\mathbb{R}^2$中的一个元素，复数之间的运算视为特殊的向量运算。</p>
+<h2 id="1-复数的运算"><a href="#1-复数的运算" class="headerlink" title="1 复数的运算"></a>1 复数的运算</h2><p>我们其实可以把每一个复数视为$\mathbb{R}^2$中的一个<strong>向量</strong>，复数之间的运算视为特殊的<strong>向量运算</strong>。</p>
+<p>类似的，我们有：</p>
 <p>$复数的加法：$</p>
 <script type="math/tex; mode=display">\begin{pmatrix}
 a\\
 b\\
-\end{pmatrix}</script><p>$ 复数的乘法：  (a+bi)(c+di) = (ac-bd) + (ad+bc)i $</p>
-<p>数学公式快显示！</p>
+\end{pmatrix}+\begin{pmatrix}
+c\\
+d\\
+\end{pmatrix}=\begin{pmatrix}
+a+c\\
+b+d\\
+\end{pmatrix}</script><p>关于乘法，我们需要做一些灵巧的设计，来体现$i^2=-1$的<strong>复数结构</strong></p>
+<p>以下用$*_c$表示复数乘法</p>
+<p>$ 复数的乘法:\begin{pmatrix}<br>a\\<br>b\\<br>\end{pmatrix}*_c\begin{pmatrix}<br>c\\<br>d\\<br>\end{pmatrix}=\begin{pmatrix}<br>ac-bd\\<br>ad+bc\\<br>\end{pmatrix}= \begin{pmatrix}<br>a&amp;-b\\<br>b&amp;a\\<br>\end{pmatrix}\begin{pmatrix}<br>c\\<br>d\\<br>\end{pmatrix}$</p>
+<p>你可能会很诧异，似乎在复数的乘法运算中，a+bi变为了一个矩阵，而且四个元素分别为实部或者虚部（以及其相反数）</p>
+<p>类似的，我们可以把复数的矩阵运算推广到多个复数相乘，有</p>
+<p>$多个复数的乘法:$</p>
+<p>$(a+bi)(c+di)(x+yi)=<a href="x+yi">(ac-bd)+(bc+ad)i</a>$</p>
+<p>$\begin{pmatrix}<br>a\\<br>b\\<br>\end{pmatrix}<em>_c\begin{pmatrix}<br>c\\<br>d\\<br>\end{pmatrix}</em>_c\begin{pmatrix}<br>x\\<br>y\\<br>\end{pmatrix}= \begin{pmatrix}<br>a&amp;-b\\<br>b&amp;a\\<br>\end{pmatrix}\begin{pmatrix}<br>c&amp;-d\\<br>d&amp;c\\<br>\end{pmatrix}\begin{pmatrix}<br>x\\<br>y\\<br>\end{pmatrix}=\begin{pmatrix}<br>ac-bd\\<br>ad+bc\\<br>\end{pmatrix}\begin{pmatrix}<br>x\\<br>y\\<br>\end{pmatrix}$</p>
+<p>对比上面两种形式，可以发现两者的形式是<strong>很理想</strong>的，即多个复数相乘可以对应变为矩阵的乘积</p>
+<p>这真的是巧合吗？还是我们可以提取一个角度，使得矩阵本身蕴含有某种<strong>类似复数</strong>的结构？</p>
 
         <!-- 分类文章 -->
         
