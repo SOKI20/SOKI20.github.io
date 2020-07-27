@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>  HELLO,LOLOL |    欢迎回来，我的频道.</title>
+  <title>  Untitled |    欢迎回来，我的频道.</title>
   <!-- 标签页图标 -->
   
   <!-- 图标库 -->
@@ -122,28 +122,31 @@
   <div class="post-content-outer">
     <div class="post-content-inner ">
       <div class="post-intro-no-cover">
-        <div class="post-title animate__animated  animate__fadeInUp">HELLO,LOLOL</div>
-        <div class="meta-intro animate__animated  animate__fadeInUp"><span class="intro-span">2020年6月25日 by Stark</span></div>
+        <div class="post-title animate__animated  animate__fadeInUp">Untitled</div>
+        <div class="meta-intro animate__animated  animate__fadeInUp"><span class="intro-span">2020年7月27日 by Stark</span></div>
         
       </div>
       <div class="post-content-main animate__animated  animate__fadeInUp">
         <!-- 目录 -->
         
-          <ol class="toc-top"><li class="toc-top-item toc-top-level-2"><a class="toc-top-link" href="#Quick-Start"><span class="toc-top-text">Quick Start</span></a></li></ol>
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <hr>
+<p>title: 高等线性代数笔记（一）：复数</p>
+<hr>
+<p>类似的，我们可以把复数的矩阵运算推广到多个复数相乘，有</p>
+<p>$多个复数的乘法:$</p>
+<p>$(a+bi)(c+di)(x+yi)=<a href="x+yi">(ac-bd)+(bc+ad)i</a>$</p>
+<p>$\begin{pmatrix}<br>a\\<br>b\\<br>\end{pmatrix}<script type="math/tex">*_c\begin{pmatrix}
+c\\
+d\\
+\end{pmatrix}*_c</script>\begin{pmatrix}<br>x\\<br>y\\<br>\end{pmatrix}<script type="math/tex">= \begin{pmatrix}
+a&-b\\
+b&a\\
+\end{pmatrix}</script>\begin{pmatrix}<br>c&amp;-d\\<br>d&amp;c\\<br>\end{pmatrix}<script type="math/tex">\begin{pmatrix}
+x\\
+y\\
+\end{pmatrix}=</script>\begin{pmatrix}<br>ac-bd\\<br>ad+bc\\<br>\end{pmatrix}$$\begin{pmatrix}<br>x\\<br>y\\<br>\end{pmatrix}$</p>
+<p>对比上面两种形式，可以发现两者的形式是<strong>很理想</strong>的，即多个复数相乘可以对应变为矩阵的乘积</p>
+<p>这真的是巧合吗？还是我们可以提取一个角度，使得矩阵本身蕴含有某种<strong>类似复数</strong>的结构？</p>
 
         <!-- 分类文章 -->
         
